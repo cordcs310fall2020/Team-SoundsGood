@@ -1,0 +1,47 @@
+
+p {
+    font-family: Courier;
+}
+body {
+    margin:0;
+    background: #333;
+}
+
+nav.header ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    background: #333;
+}
+
+nav.header li {
+    display: inline-block;
+    background: #333;
+}
+
+nav.header a {
+    text-decoration: none;
+    color: white;
+    background: #333;
+    width: 100px;
+    display: block;
+    margin: 20px;
+    font-size: 18px;
+    font-family: Helvetica;
+    transition: 0.4s;
+
+}
+
+nav a:hover{
+    text-decoration: underline white;
+    background: #333;
+}
+
+.bg-img {
+    background-image: url("../img/background_main.jpg");
+    height: 85%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

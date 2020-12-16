@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+    
+    <HTML>
+        
+        <!-- Head Title -->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>COVID STORE</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/Navigation_Bar.css" type="text/css">
+        <link rel="stylesheet" href="css/Cart.css" type="text/css">
+    </head>
+    
+    <!-- Body and the cart -->
+    <body>
+    <div class="nav">
+
+        <nav class="header">
+            <ul>
+                <li><a href="Cart_Index.php">Home</a></li>
+                <li><a href="My_Products.html">Products</a></li>
+                <li><a href="About_Us.html">About Us</a></li>
+                <li><a href="Contact_Us.html">Contact Us</a></li>
+                <li><a href="Cart.php">Cart</a></li>
+                <li><a href="Settings_User.html">Settings</a></li>
+            </ul>
+        </nav>
+
+        <div class="bg-img"></div>
+    </div>
+    <main>
+            <div class="basket">
+            <div class="basket-labels">
+                <ul>
+                <li class="item item-heading">Item</li>
+                <li class="price">Price</li>
+                <li class="subtotal">Subtotal</li>
+                </ul>
+            </div>
+            <div class="basket-product">
+                <div class="item">
+                <div class="product-image">
+                    <img src="products/mask_01.jpg" alt="Placholder Image 2" class="product-frame">
+                </div>
+                <div class="product-details">
+                    <h1>Mask One</h1>
+                </div>
+                </div>
+                <div class="price">5.00</div>
+                <div class="subtotal">5.00</div>
+                <div class="remove">
+                <button>Remove</button>
+                </div>
+            </div>
+            </div>
+            <aside>
+            <div class="summary">
+                <div class="summary-total-items"><span class="total-items"></span> Items in your Bag</div>
+                <div class="summary-subtotal">
+                <div class="subtotal-title">Subtotal</div>
+                <div class="subtotal-value final-value" id="basket-subtotal">5.00</div>
+                <div class="summary-promo hide">
+                </div>
+                </div>
+                <div class="summary-total">
+                <div class="total-title">Total</div>
+                <div class="total-value final-value" id="basket-total">5.00</div>
+                </div>
+                <div class="summary-checkout">
+                <button class="checkout-cta">Checkout</button>
+                </div>
+            </div>
+            </aside>
+        </main>
+    </body>
+</HTML>

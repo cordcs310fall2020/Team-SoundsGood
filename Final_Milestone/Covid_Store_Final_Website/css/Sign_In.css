@@ -1,0 +1,117 @@
+body{
+  color: #333;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-family: sans-serif;
+    background-image: url("../img/background_main.jpg");
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    margin-top: 300px;
+}
+
+/*Style for title*/
+.Login-title{
+    color: #fff;
+    text-transform: uppercase;
+    transition: all 4s ease-in-out;
+}
+
+.Login-title h1{
+        font-size: 82px;
+        line-height: 10px;
+}
+
+.Login-title h2{
+    font-size: 40px;
+}
+
+/*Style for Success and Error of entire Input i.e First Name box, Last Name box*/
+input{
+    border-color: white;
+    height: 50px;
+    box-shadow: 0 5px 25px rgba(0,0,0,.5);
+    text-align: center;
+    border: 3px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	font-family: sans-serif;
+	font-size: 18px;
+	width: 100%;
+    margin-top: 10px;
+}
+
+.sign-in-title{
+  width: 600px;
+  text-transform: uppercase;
+  position: center;
+  font: sans-serif;
+}
+
+
+
+.login-form{
+	width: 600px;
+	font: sans-serif;
+	border: none;
+	outline: none;
+	background: transparent;
+	border-bottom: 1px #333;
+	color: white;
+	font-size:18px;
+	margin-bottom: 16px;
+	text-transform: capitalize;
+	display: inline-block;
+}
+
+.form-control-login{
+  border-bottom: 1px #333;
+  font-family: Courier;
+  background: #ff5722;
+    border-color: transparent;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height: 50px;
+    margin-top: 20px;
+    box-shadow: 0 5px 25px rgba(0,0,0,.5);
+    text-align: center;
+	border: 2px solid #e42b1e;
+	border-radius: 4px;
+    font-family: sans-serif;
+    width: 300px;
+}
+
+.form-control-login:hover{
+      text-decoration: underline;
+  }
+
+form .signup-option{
+  text-decoration: none;
+  color: white;
+  font-family: sans-serif;
+}
+
+.not-member{
+  text-decoration: none;
+  color: white
+}
+
+form .signup-option-signup{
+  border: none;
+  border-bottom: 1px #333;
+  color: white;
+  font-family: sans-serif;
+}
+
+form .signup-option-signup:hover{
+  text-decoration: underline;
+  
+}
+
+.form-control input:focus {
+	outline: 0;
+	border-color: #777;
+}

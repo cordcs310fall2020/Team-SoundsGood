@@ -1,0 +1,22 @@
+body{
+    height: 100vh;
+	padding: 0;
+	text-align: center;
+    font-family: Courier;
+    color: #f0f0f0;
+}
+
+table, th, td {
+    border: 1px #333;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.bg-img {
+    background-image: url("../img/background_main.jpg");
+    height: 85%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

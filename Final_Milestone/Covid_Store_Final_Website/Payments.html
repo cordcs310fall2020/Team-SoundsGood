@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+  <HTML>
+    <head>
+        <meta charset="utf-8">
+        <title>COVID STORE</title>
+        <link rel="stylesheet" href="css/Payments.css">
+    </head>
+    
+    <body>
+        
+            <!-- form links to javascript on submit -->
+        <form id="form" class="payment" onsubmit="return checkInputs()">
+        <div class="panel panel-default credit-card-box">
+        <div class="panel-heading display-table">
+        <div class="row display-tr">
+        <h3 class="panel-title display-td">Your Payment Details</h3>
+                </div>
+                </div>
+                </div>
+                <br>
+                
+                <!-- Entire Form Field -->
+                <div class="form-control">
+                <label for="couponCode">First Name</label>
+                <input id="fname" type="text" class="form-control" name="couponCode" />
+                <label for="couponCode">Last Name</label>
+                <input id="lname" type="text" class="form-control" name="couponCode" />
+                <label for="cardNumber">Card Number</label>
+                <input id="number" type="text" size="10" class="form-control" name="cardNumber" placeholder="Valid Card Number" autocomplete="cc-number"  autofocus />
+                <span class="input-group-addon"><i class="fa fa-credit-card"></i></span>
+                <label for="cardExpir">Expiration Date</label>
+                <input id="expiry" type="text" size="5" class="form-control" name="cardExpiry" placeholder="MM / YY" autocomplete="cc-exp"  />
+                <label for="cardCVC">CVV Code</label>
+                <input id="cvv" type="text" size="3" class="form-control" name="cardCVC" placeholder="CVC" autocomplete="cc-csc" />
+                <br>
+                <p style="float:left">Total Amount Due</p>
+               </div>
+                <div class="btn">
+                    
+                <!-- Button for submitting form -->
+                <input type="submit" name="submit" id="submit" value="Confirm Payment" class="blueButton" style="float:right;" />
+                <br><br>
+            </div>
+            
+                
+        <script type="text/javascript">
+
+        //Main function for validating
+        function checkInputs() {
+            
+            //Initializing constants
+            const Fname = document.getElementById('fname');
+            const Lname = document.getElementById('lname');
+            const Number = document.getElementById('number');
+            const Expiry = document.getElementById('expiry');
+            const CVV = document.getElementById('cvv');
+            
+
+            // trim to remove the whitespaces
+            const FnameValue = Fname.value.trim();
+            const LnameValue = Lname.value.trim();
+            const Numbervalue = Number.value.trim();
+            const ExpiryValue = Expiry.value.trim();
+            const CVVValue = CVV.value.trim();
+            
+
+            //IF-ELSE loop for client-side validation
+            if (FnameValue === '' || LnameValue === '' || Numbervalue === '' || ExpiryValue === '' || CVVValue === '') {
+                setErrorFor(Fname);
+                setErrorFor(Lname);
+                setErrorFor(Number);
+                setErrorFor(Expiry);
+                setErrorFor(CVV);
+                alert("Fields cannot be empty. Please fill up entire fields! :)")
+                return false;
+            } else {
+                setSuccessFor(Fname);
+                setSuccessFor(Lname);
+                setSuccessFor(Number);
+                setSuccessFor(Expiry);
+                setSuccessFor(CVV);
+            }
+
+        //Function when the criteria is met    
+        function setSuccessFor(label) {
+        const formControl = label.parentElement;    
+        formControl.className = 'form-control success';
+        }
+        
+        //Function when the criteria is not met
+        function setErrorFor(label) {
+        const formControl = label.parentElement; 
+        formControl.className = 'form-control error';
+        }
+}
+</script>
+                
+    </body>
+</HTML>

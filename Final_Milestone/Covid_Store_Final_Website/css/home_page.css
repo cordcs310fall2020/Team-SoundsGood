@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+  }
+
+  body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: Courier;
+    background-size: cover;
+    background-position: center;
+    background: url("../img/background_main.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  
+ .column {
+    float: left;
+    width: 20%;
+    padding: 5px;
+  }
+
+  .bg-img {
+    background-image: url("../img/background_main.jpg");
+    height: 85%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+  

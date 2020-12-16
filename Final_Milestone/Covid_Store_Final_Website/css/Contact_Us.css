@@ -1,0 +1,112 @@
+/*Style for entire body*/
+body{
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-family: sans-serif;
+}
+	
+
+/*Style for titles*/
+.Contact-title{
+    margin-top: 100px;
+    color: #fff;
+    text-transform: uppercase;
+    transition: all 4s ease-in-out;
+}
+
+.contact-title h2{
+    font-size: 20px;
+}
+
+/*Style for entire form including textfields and areas*/
+form{
+	margin-top: 50px;
+    margin-bottom: 10px;
+    width: 600px;
+    transition: all 4s ease-in-out;
+    align-items: center;
+    position: relative;
+    display:inline-block;
+    text-align:center;
+}
+
+/*Style for entire Label i.e First Name, Email */
+label{
+    display: flex;
+    margin-bottom: 5px;
+    font-family: sans-serif;
+    font-size: 18px;
+    vertical-align: baseline;
+}
+
+
+.form-control{
+	width: 600px;
+	border: none;
+	outline: none;
+	border-bottom: 1px #333;
+	color: black;
+	font-size:18px;
+	margin-bottom: 16px;
+}
+
+.form-control input:focus {
+    outline: 0;
+    border-color: #777;
+}
+
+input{
+	height: 46px;
+    outline: 0;
+    border-color: #777;
+}
+
+
+/*Style for the Submit Button*/
+form .submit{
+    background: orangered;
+    color: orange;
+    font-size: 23px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height: 50px;
+    margin-top: 20px;
+    box-shadow: 0 5px 25px rgba(0,0,0,.5);
+    text-align: center;
+    border: 2px solid #e42b1e;
+    border-radius: 4px;
+    font-family: sans-serif;
+    width: 600px;
+}
+
+/*Style for the Message Box*/
+textarea{
+    border-color: transparent;
+    height: 200px;
+    box-shadow: 0 5px 25px rgba(0,0,0,.5);
+    text-transform: capitalize;
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-family: sans-serif;
+    font-size: 18px;
+    width: 100%;
+}
+
+/*Style for Submit*/
+form .submit:hover{
+	text-decoration: underline;
+}
+
+/*Style for the Background Image*/
+.bg-img {
+    background-image: url("../img/background_main.jpg");
+    height: 85%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
