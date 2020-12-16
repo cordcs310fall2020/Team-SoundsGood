@@ -50,8 +50,6 @@
             <col width="100">
             <col width="100">
             <col width="100">
-            <col width="100">
-            <col width="100">
             <col width="40">
                 <thead>
                     <tr>
@@ -60,24 +58,10 @@
                         <th>Email</th>
                         <th>Password</th>
                         <th>Phone</th>
-                        <th>Birthday</th>
-                        <th>Gender</th>
                         <th>Products Bought</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <?php while ($row = $result->fetch()): ?>
-                        <tr>
-                            <td><?php echo htmlspecialchars($row['fname']) ?></td>
-                            <td><?php echo htmlspecialchars($row['lname']); ?></td>
-                            <td><?php echo htmlspecialchars($row['email']); ?></td>
-                            <td><?php echo htmlspecialchars($row['psw']) ?></td>
-                            <td><?php echo htmlspecialchars($row['phone']) ?></td>
-                            <td><?php echo htmlspecialchars($row['dob']); ?></td>
-                            <td><?php echo htmlspecialchars($row['gender']); ?></td>
-                            <td><?php echo htmlspecialchars($row['purchased']); ?></td>
-                        </tr>
-                    <?php endwhile; ?>
                 </tbody>
             </table>
     </body>
